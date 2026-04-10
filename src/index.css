@@ -1,25 +1,30 @@
-:root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+:root {
+  --text100: #A8AFB3;
+  --text200: #898D8F;
+  --text300: #0F1115;
+
+  --bg100: #202325;
+  --bg200: #1A1A2E;
+  --bg300: #1E1E1E;
+  --bg400: #0F1115;
+
+  --blue100:#E8F0FF;
+  --blue200:#74C0FC;
+  --blue300: #3B82F6;
+  --blue400: #105FDF;
+  --shadow:
+    0px 0px 1px 0px rgba(20, 20, 20, 40%), 0px 1px 8px 0px rgba(20, 20, 20, 10%);
+
+  --sans: 'Pretendard', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Pretendard', system-ui, 'Segoe UI', Roboto, sans-serif;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
+  color: var(--text100);
+  background: var(--bg100);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -32,17 +37,23 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+    --text100: #f3f4f6;
+    --text200: #D9D9D9;
+    --text300: #898D8F;
+
+    --bg100: #202325;
+    --bg200: #1A1A2E;
+    --bg300: #1E1E1E;
+    --bg400: #0F1115;
+
+    --blue100:#E7F2FF;
+    --blue200:#74C0FC;
+    --blue300: #3B82F6;
+    --blue400: #1864AB;
+
+    --shadow: 
+    0px 0px 1px 0px #3b82f6, 0px 1px 10px 0px rgba(59, 130, 246, 80%);
+
   }
 
   #social .button-icon {
@@ -95,17 +106,3 @@ p {
   margin: 0;
 }
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
-}
