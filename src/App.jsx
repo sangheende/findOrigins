@@ -6,6 +6,11 @@ import Report from './pages/Report'
 import Result from './pages/Result'
 import NotFound from './pages/NotFound'
 
+import { db } from './lib/firebase';
+import { collection, addDoc, getDocs } from 'firebase/firestore';
+import { useEffect } from 'react';
+
+
 function App() {
 
   return (
@@ -24,5 +29,6 @@ function App() {
     </>
   )
 }
+
 
 export default App

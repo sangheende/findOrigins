@@ -28,3 +28,9 @@ dist-ssr
 *.sass.map
 *.scss.map
 *.scss
+
+
+.env.local
+.env*.local
+
+*.json
